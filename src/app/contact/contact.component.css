@@ -1,0 +1,11 @@
+.cont{
+    
+    text-align: center;
+
+    background-color: rgb(223, 209, 220);
+    /*background-image: url('https://www.solidbackgrounds.com/images/1920x1080/1920x1080-light-blue-solid-color-background.jpg');*/
+    background-repeat: no-repeat;
+    background: cover;
+    background-size: 100%;
+    margin-bottom: 0px;
+  }

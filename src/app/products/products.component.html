@@ -1,0 +1,25 @@
+
+
+<div class="container" style="margin-left: 50px;margin-right: 0px;padding: 0px;">
+<app-navbar></app-navbar>
+ 
+  <div class="row" style="padding:0px;">
+@for (item of data; track $index) 
+{
+  
+  <div class="col-3" style="padding:0px;">
+    <div class="card"  style=" height: 27rem; background-image: url(https://img.freepik.com/free-vector/pastel-gradient-blur-soft-peach-background-vector_53876-171596.jpg) ;;">
+      <img src="{{item.image}}" class="card-img-top" height="250px" style=" border-radius: 0px; padding: 15px;" style="padding: 10px;" alt="...">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">{{item.describe}}</p>
+        <div class="mt-auto"> <!-- Use "mt-auto" to push the button to the bottom -->
+          <a routerLink= "{{item.id}}" class="btn"><b>Rs.{{item.price}}</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+}
+</div>
+<app-footer></app-footer>
+</div>
